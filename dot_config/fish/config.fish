@@ -9,7 +9,6 @@ end
 if status is-interactive
     # Commands to run in interactive sessions can go here
     set fish_greeting
-
 end
 
 fish_vi_key_bindings
@@ -84,27 +83,6 @@ else
     else
         set -x PATH "/home/gujiu/miniconda3/bin" $PATH
     end
-end
-# <<< conda initialize <<<
-# 切换gdb
-function pwndbg
-    gdb -q -nx -ex "source ~/pwndbg/gdbinit.py" $argv
-end
-
-function gef
-    gdb -q -nx -ex "source ~/.gdbinit-gef.py" $argv
-end
-
-#虚拟机环境
-alias virt-manager='/usr/bin/python3 /usr/bin/virt-manager'
-
-#python解包
-function pyinstxtractor
-    python ~/pyinstxtractor/pyinstxtractor.py $argv
-end
-
-function pydumpck
-    python ~/pydumpck/pydumpck.py $argv
 end
 
 #操作手机

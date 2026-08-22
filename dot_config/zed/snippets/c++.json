@@ -6,7 +6,7 @@
             "#include <cassert>",
             "//#include <ranges>",
             "using namespace std;",
-            "#define ONLINE_JUDGE",
+            "//#define ONLINE_JUDGE",
             "#define endl '\\n'",
             "#define int long long",
             "#define all(A,i) A.begin()+i, A.end()",
