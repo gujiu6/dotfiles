@@ -1,0 +1,310 @@
+config_version = 13
+
+[audio]
+enable_overdrive = true
+enable_sounds = true
+sound_volume = 0.19999999552965164
+
+[bar.default]
+background_opacity = 0.4999999888241291
+capsule = true
+center = [ "group:g6" ]
+end = [ "group:g3", "group:g2", "group:g4" ]
+font_family = "JetBrainsMonoNL NF"
+margin_ends = 0
+padding = 10
+start = [ "group:g7", "group:g1", "group:g5", "group:g8" ]
+thickness = 41
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "date", "clock", "bar", "weather" ]
+    opacity = 0.69999998807907104
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g2"
+    members = [ "notifications", "network", "bluetooth", "volume", "brightness", "battery", "control-center" ]
+    opacity = 0.69999998807907104
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g3"
+    members = [ "tray", "clipboard" ]
+    opacity = 0.69999998807907104
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g4"
+    members = [ "session" ]
+    opacity = 0.69999998807907104
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g5"
+    members = [ "media", "audio_visualizer" ]
+    opacity = 0.69999998807907104
+    padding = 0.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g6"
+    members = [ "workspaces", "taskbar" ]
+    opacity = 0.69999998807907104
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g7"
+    members = [ "launcher", "wallpaper", "mpvpaper", "wallhaven" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g8"
+    members = [ "cat", "ram", "temp" ]
+    opacity = 1.0
+    padding = 6.0
+
+[calendar]
+enabled = true
+
+[control_center.calendar]
+event_time_format = "%H:%M:%S"
+show_events_card = false
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002", "desktop-widget-0000000000000003" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 320.0
+    box_width = 336.0
+    cx = 170.5
+    cy = 87.5
+    output = "eDP-1"
+    placement_height = 1333.0
+    placement_width = 2133.0
+    rotation = 0.0
+    type = "clock"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = false
+        background_color = "on_primary"
+        clock_style = "digital"
+        color = "primary"
+        format = "{:%H:%M:%S}"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1066.5
+    cy = 666.5
+    output = "eDP-1"
+    placement_height = 1333.0
+    placement_width = 2133.0
+    rotation = 0.0
+    type = "fancy_audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = false
+        secondary_color = "secondary"
+        visualization_mode = "all"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 458.5
+    cy = 94.5
+    output = "eDP-1"
+    placement_height = 1333.0
+    placement_width = 2133.0
+    rotation = 0.0
+    type = "weather"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        background = false
+        color = "primary"
+
+[dock]
+enabled = true
+icon_size = 25
+item_spacing = 8
+launcher_position = "start"
+main_axis_padding = 0
+reserve_space = false
+smart_auto_hide = true
+
+[location]
+auto_locate = true
+
+[lockscreen]
+allow_empty_password = true
+blur_intensity = 0.0
+tint_intensity = 0.0
+
+[lockscreen_widgets]
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1067.124755859375
+    cy = 1105.6279296875
+    output = "eDP-1"
+    placement_height = 1333.0
+    placement_width = 2133.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[nightlight]
+enabled = true
+
+[plugin_settings."dotnetrob/cat"]
+panel_placement = "floating"
+
+[plugin_settings."noctalia/mpvpaper"]
+cpu_quota = 1600
+cpu_weight = 10000
+mute = false
+nice = 19
+picker_open_near_click = true
+picker_placement = "floating"
+video_directory = "/home/gujiu/Wallpapers/Video"
+
+[plugin_settings."noctalia/wallhaven"]
+browser_open_near_click = true
+browser_placement = "floating"
+download_dir = "/home/gujiu/Wallpapers/Wallhaven"
+
+[plugin_settings."noctalia/wallpaper_depth"]
+manager_open_near_click = true
+manager_placement = "floating"
+
+[plugins]
+enabled = [ "noctalia/timer", "noctalia/mpvpaper", "noctalia/wallhaven", "dotnetrob/cat" ]
+
+[shell]
+avatar_path = "/home/gujiu/Wallpapers/v1.jpg"
+external_ip_enabled = true
+font_family = "JetBrainsMonoNL NF"
+launch_apps_as_systemd_services = true
+password_style = "random"
+polkit_agent = true
+settings_window_translucent = true
+telemetry_enabled = true
+
+    [shell.greeter_sync]
+    auto_sync = true
+
+    [shell.launcher]
+    compact = true
+    show_app_actions = true
+
+    [shell.panel]
+    open_near_click_control_center = true
+    transparency_mode = "glass"
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Catppuccin Macchiato Pink"
+mode = "auto"
+source = "wallpaper"
+
+[wallpaper]
+directory = "/home/gujiu/Wallpapers/Pic"
+
+    [wallpaper.default]
+    path = "/home/gujiu/Wallpapers/Pic/v3.jpg"
+
+    [wallpaper.last]
+    path = "/home/gujiu/Wallpapers/Pic/v3.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/gujiu/Wallpapers/Pic/v3.jpg"
+
+[widget.audio_visualizer]
+bands = 128
+
+[widget.bar]
+type = "noctalia/timer:bar"
+
+[widget.cat]
+cat_size = 48
+type = "dotnetrob/cat:cat"
+
+[widget.clock]
+format = "{:%H:%M:%S}"
+
+[widget.date]
+format = "{:%A %Y-%m-%d}"
+
+[widget.media]
+hide_artist = true
+
+[widget.mpvpaper]
+type = "noctalia/mpvpaper:mpvpaper"
+
+[widget.taskbar]
+icon_scale = 2.0
+item_spacing = 7
+
+[widget.wallhaven]
+type = "noctalia/wallhaven:wallhaven"

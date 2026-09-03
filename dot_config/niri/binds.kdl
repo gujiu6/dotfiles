@@ -1,0 +1,146 @@
+binds {
+    // ========================================================
+    // 一. 窗口操作
+    // ========================================================
+
+    // 移动焦点
+    Mod+Left { focus-column-left; }
+    Mod+Down { focus-window-down; }
+    Mod+Up { focus-window-up; }
+    Mod+Right { focus-column-right; }
+
+    // 移动当前窗口
+    Mod+Shift+Left { move-column-left; }
+    Mod+Shift+Down { move-window-down; }
+    Mod+Shift+Up { move-window-up; }
+    Mod+Shift+Right { move-column-right; }
+
+    // 关闭当前窗口
+    Mod+C { close-window; }
+
+    // 全屏
+    Mod+F { fullscreen-window; }
+
+    // 最大化当前 column
+    Mod+D { maximize-column; }
+
+    // ========================================================
+    // 二. 调整窗口大小
+    // ========================================================
+
+    Ctrl+Mod+H { set-column-width "-5%"; }
+    Ctrl+Mod+L { set-column-width "+5%"; }
+    Ctrl+Mod+J { set-window-height "+5%"; }
+    Ctrl+Mod+K { set-window-height "-5%"; }
+
+    // 调整 column 宽度
+    Mod+Minus { set-column-width "-10%"; }
+    Mod+Equal { set-column-width "+10%"; }
+
+    // ========================================================
+    // 三. 工作区：1 ~ 10
+    // ========================================================
+
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+4 { focus-workspace 4; }
+    Mod+5 { focus-workspace 5; }
+    Mod+6 { focus-workspace 6; }
+    Mod+7 { focus-workspace 7; }
+    Mod+8 { focus-workspace 8; }
+    Mod+9 { focus-workspace 9; }
+    Mod+0 { focus-workspace 10; }
+
+    // ========================================================
+    // 四. 移动窗口到指定工作区
+    // ========================================================
+
+    Mod+Alt+1 { move-column-to-workspace 1; }
+    Mod+Alt+2 { move-column-to-workspace 2; }
+    Mod+Alt+3 { move-column-to-workspace 3; }
+    Mod+Alt+4 { move-column-to-workspace 4; }
+    Mod+Alt+5 { move-column-to-workspace 5; }
+    Mod+Alt+6 { move-column-to-workspace 6; }
+    Mod+Alt+7 { move-column-to-workspace 7; }
+    Mod+Alt+8 { move-column-to-workspace 8; }
+    Mod+Alt+9 { move-column-to-workspace 9; }
+    Mod+Alt+0 { move-column-to-workspace 10; }
+
+    // ========================================================
+    // 五. 鼠标滚轮
+    // ========================================================
+
+    // 滚轮上下滚动切换工作区 (带 150ms 冷却防误触) / Scroll wheel up/down to switch workspace (150ms cooldown)
+    Mod+WheelScrollDown cooldown-ms=150 { focus-column-right; }
+    Mod+WheelScrollUp   cooldown-ms=150 { focus-column-left; }
+
+    // Ctrl+滚轮上下滚动携带当前列切换工作区 / Ctrl+Scroll wheel up/down to move column between workspaces
+    Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
+    Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+
+    // 滚轮左右/Shift+滚轮切换列焦点 / Scroll wheel left/right or Shift+wheel to switch column focus
+    Mod+WheelScrollRight      { focus-column-right; }
+    Mod+WheelScrollLeft       { focus-column-left; }
+    Mod+Shift+WheelScrollDown { focus-column-right; }
+    Mod+Shift+WheelScrollUp   { focus-column-left; }
+
+    // Ctrl+滚轮左右/Ctrl+Shift+滚轮移动当前列 / Ctrl+wheel or Ctrl+Shift+wheel to move column left/right
+    Mod+Ctrl+WheelScrollRight      { move-column-right; }
+    Mod+Ctrl+WheelScrollLeft       { move-column-left; }
+    Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
+    Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
+
+    // ========================================================
+    // 六. 应用启动
+    // ========================================================
+
+    // 终端
+    Mod+Q { spawn "ghostty"; }
+
+    // zen-browser
+    Mod+W { spawn "zen-browser"; }
+
+    // ========================================================
+    // 七. 系统面板
+    // ========================================================
+
+    // 搜索
+    Mod+R { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+
+    // 关机等
+    Mod+X { spawn "noctalia" "msg" "panel-toggle" "session"; }
+
+    // 锁屏
+    Mod+L { spawn "noctalia" "msg" "session" "lock"; }
+
+    // 文件管理器
+    Mod+E { spawn "nautilus"; }
+
+    // 设置
+    Mod+I { spawn "noctalia" "msg" "settings-toggle"; }
+
+    // 剪贴板
+    Mod+V { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
+
+    // 快捷键覆盖层
+    Mod+Slash { show-hotkey-overlay; }
+
+    // 任务概览
+    Mod+Tab repeat=false { toggle-overview; }
+
+    // ========================================================
+    // 八. 截图
+    // ========================================================
+
+    // 截图
+    Print { screenshot; }
+
+    // 整个屏幕
+    Ctrl+Print { screenshot-screen; }
+
+    // 当前窗口
+    Alt+Print { screenshot-window; }
+
+
+}

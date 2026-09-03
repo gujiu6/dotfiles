@@ -1,0 +1,32 @@
+# Profiles Config for Clash Verge
+
+current: rkrXK758WWgH
+chain: null
+valid:
+- dns
+- sub-rules
+- unified-delay
+- tun
+- profile
+items:
+- uid: rkrXK758WWgH
+  type: remote
+  name: ikun
+  file: rkrXK758WWgH.yaml
+  desc: ''
+  url: https://ycnx9.no-mad-world.club/link/yatpM9Zo8IuPmpsm?clash=3&extend=1
+  selected:
+  - name: 🔰 选择节点
+    now: 🇯🇵 免费-日本7-Ver.2
+  - name: GLOBAL
+    now: 🇯🇵 免费-日本1-Ver.7
+  extra:
+    upload: 466693289
+    download: 19802463753
+    total: 58536755200
+    expire: 2084178518
+  updated: 1771761223
+  option:
+    with_proxy: false
+    self_proxy: true
+    update_interval: 5

@@ -1,0 +1,24 @@
+// 1.关闭热角
+gestures {
+    hot-corners {
+        off
+    }
+}
+
+input {
+    keyboard {
+        xkb
+        numlock
+        repeat-delay 200 //按住一个键多久之后开始重复输入
+        repeat-rate 40 //每秒重复多少次
+    }
+    touchpad {
+        tap
+        natural-scroll
+        dwt  // 打字时禁用触摸板,强烈建议加
+        dwtp // 打字时也禁用触摸板指针移动
+    }
+    mouse {
+        accel-speed -0.4
+    }
+}

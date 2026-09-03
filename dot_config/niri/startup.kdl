@@ -1,0 +1,2 @@
+spawn-at-startup "~/.config/niri/scripts/start-noctalia.sh"
+spawn-at-startup "sh" "-c" "command -v fcitx5 >/dev/null 2>&1 && exec fcitx5 -d"

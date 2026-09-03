@@ -1,0 +1,359 @@
+# ================================================================
+# 主题
+# ================================================================
+
+theme = "Catppuccin Mocha"
+
+
+# ================================================================
+# Shell 集成
+# ================================================================
+
+shell-integration = fish
+
+
+# ================================================================
+# 字体
+# ================================================================
+
+font-family = "JetBrainsMono NF"
+font-size = 12
+adjust-cell-height = 2
+
+
+# ================================================================
+# 窗口
+# ================================================================
+
+# Linkarzu 风格的透明度
+background-opacity = 0.78
+
+# KDE Plasma KWin 毛玻璃模糊
+background-blur = true
+
+# 未聚焦的分屏降低透明度
+unfocused-split-opacity = 0.70
+
+# 窗口内边距
+window-padding-x = 10
+window-padding-y = 8
+
+# 保存窗口状态
+window-save-state = always
+
+# 跟随系统主题
+window-theme = auto
+
+
+# ================================================================
+# 光标
+# ================================================================
+
+cursor-style = bar
+cursor-style-blink = true
+cursor-opacity = 0.8
+
+
+# ================================================================
+# 鼠标
+# ================================================================
+
+# 输入时自动隐藏鼠标
+mouse-hide-while-typing = true
+
+# 选中文本后自动复制到剪贴板
+copy-on-select = clipboard
+
+
+# ================================================================
+# 滚动缓冲区
+# ================================================================
+
+# 最大滚动历史记录
+scrollback-limit = 25000000
+
+
+# ================================================================
+# 快速终端
+# ================================================================
+
+# 快速终端出现在顶部
+quick-terminal-position = top
+
+# 在当前鼠标所在的屏幕显示
+quick-terminal-screen = mouse
+
+# 失去焦点后自动隐藏
+quick-terminal-autohide = true
+
+# 快速终端动画持续时间
+quick-terminal-animation-duration = 0.08
+
+
+# ================================================================
+# 安全
+# ================================================================
+
+# 粘贴保护
+clipboard-paste-protection = true
+
+# 安全使用带括号的粘贴模式
+clipboard-paste-bracketed-safe = true
+
+
+# ================================================================
+# 分屏
+# ================================================================
+
+# 平均分配所有分屏
+keybind = super+ctrl+equal=equalize_splits
+
+# 向右创建新的分屏
+keybind = ctrl+d=new_split:right
+
+# 向下创建新的分屏
+keybind = ctrl+shift+d=new_split:down
+
+# 最大化 / 恢复当前分屏
+keybind = ctrl+shift+enter=toggle_split_zoom
+
+
+# ------------------------------------------------
+# 分屏跳转
+# ------------------------------------------------
+
+# 向上跳转
+keybind = ctrl+alt+up=goto_split:up
+
+# 向下跳转
+keybind = ctrl+alt+down=goto_split:down
+
+# 向左跳转
+keybind = ctrl+alt+left=goto_split:left
+
+# 向右跳转
+keybind = ctrl+alt+right=goto_split:right
+
+# 跳转到上一个分屏
+keybind = ctrl+left_bracket=goto_split:previous
+
+# 跳转到下一个分屏
+keybind = ctrl+right_bracket=goto_split:next
+
+
+# ------------------------------------------------
+# 调整分屏大小
+# ------------------------------------------------
+
+# 向上扩大分屏
+keybind = super+ctrl+up=resize_split:up,10
+
+# 向下扩大分屏
+keybind = super+ctrl+down=resize_split:down,10
+
+# 向左扩大分屏
+keybind = super+ctrl+left=resize_split:left,10
+
+# 向右扩大分屏
+keybind = super+ctrl+right=resize_split:right,10
+
+
+# ================================================================
+# 标签页
+# ================================================================
+
+# 新建标签页
+keybind = ctrl+t=new_tab
+
+# 上一个 / 下一个标签页
+keybind = ctrl+shift+left_bracket=previous_tab
+keybind = ctrl+shift+right_bracket=next_tab
+
+# 使用 Ctrl + Tab 切换标签页
+keybind = ctrl+tab=next_tab
+keybind = ctrl+shift+tab=previous_tab
+
+
+# ------------------------------------------------
+# 直接跳转到指定标签页
+# ------------------------------------------------
+
+keybind = super+physical:one=goto_tab:1
+keybind = super+physical:two=goto_tab:2
+keybind = super+physical:three=goto_tab:3
+keybind = super+physical:four=goto_tab:4
+keybind = super+physical:five=goto_tab:5
+keybind = super+physical:six=goto_tab:6
+keybind = super+physical:seven=goto_tab:7
+keybind = super+physical:eight=goto_tab:8
+
+# Super + 9 跳转到最后一个标签页
+keybind = super+physical:nine=last_tab
+
+
+# ================================================================
+# 窗口
+# ================================================================
+
+# 关闭当前分屏 / Surface
+keybind = ctrl+w=close_surface
+
+# 关闭当前标签页
+keybind = ctrl+alt+w=close_tab
+
+# 关闭当前窗口
+keybind = ctrl+shift+w=close_window
+
+# 关闭所有窗口
+keybind = ctrl+alt+shift+w=close_all_windows
+
+
+# ================================================================
+# 字体大小
+# ================================================================
+
+# 增大字体
+keybind = super+equal=increase_font_size:1
+keybind = super+plus=increase_font_size:1
+
+# 减小字体
+keybind = super+minus=decrease_font_size:1
+
+# 恢复默认字体大小
+keybind = super+zero=reset_font_size
+
+
+# ================================================================
+# 命令跳转
+# ================================================================
+
+# 跳转到上一个命令提示符
+keybind = super+up=jump_to_prompt:-1
+
+# 跳转到下一个命令提示符
+keybind = super+down=jump_to_prompt:1
+
+
+# ================================================================
+# 文本选择
+# ================================================================
+
+# 向上扩展选区
+keybind = shift+up=adjust_selection:up
+
+# 向下扩展选区
+keybind = shift+down=adjust_selection:down
+
+# 向左扩展选区
+keybind = shift+left=adjust_selection:left
+
+# 向右扩展选区
+keybind = shift+right=adjust_selection:right
+
+# 向上翻页扩展选区
+keybind = shift+page_up=adjust_selection:page_up
+
+# 向下翻页扩展选区
+keybind = shift+page_down=adjust_selection:page_down
+
+# 扩展到行首
+keybind = shift+home=adjust_selection:home
+
+# 扩展到行尾
+keybind = shift+end=adjust_selection:end
+
+
+# ================================================================
+# 剪贴板
+# ================================================================
+
+# 全选
+keybind = super+a=select_all
+
+# 复制
+keybind = super+c=copy_to_clipboard
+
+# 粘贴
+keybind = super+v=paste_from_clipboard
+
+# 粘贴当前 Selection
+keybind = super+shift+v=paste_from_selection
+
+
+# ================================================================
+# Ghostty 控制
+# ================================================================
+
+# 打开 Ghostty 配置文件
+keybind = super+comma=open_config
+
+# 重新加载配置
+keybind = super+shift+comma=reload_config
+
+# 打开 / 关闭 Inspector 调试检查器
+keybind = super+alt+i=inspector:toggle
+
+
+# ================================================================
+# 全屏
+# ================================================================
+
+# 切换全屏
+keybind = super+enter=toggle_fullscreen
+
+# 备用全屏快捷键
+keybind = super+ctrl+f=toggle_fullscreen
+
+
+# ================================================================
+# 终端
+# ================================================================
+
+# 清屏
+keybind = super+k=clear_screen
+
+
+# ================================================================
+# Fish / Shell 光标操作
+# ================================================================
+
+# Alt + 左 / 右：按单词移动光标
+keybind = alt+left=esc:b
+keybind = alt+right=esc:f
+
+# Super + 左：跳转到命令行开头
+keybind = super+left=text:\x01
+
+# Super + 右：跳转到命令行结尾
+keybind = super+right=text:\x05
+
+# Super + Backspace：删除光标前面的所有内容
+keybind = super+backspace=text:\x15
+
+
+# ================================================================
+# 滚动
+# ================================================================
+
+# 向上翻页
+keybind = super+page_up=scroll_page_up
+
+# 向下翻页
+keybind = super+page_down=scroll_page_down
+
+# 滚动到顶部
+keybind = super+home=scroll_to_top
+
+# 滚动到底部
+keybind = super+end=scroll_to_bottom
+
+
+# ================================================================
+# 终端内容导出
+# ================================================================
+
+# 将当前终端内容写入文件并打开
+keybind = super+alt+shift+j=write_screen_file:open
+
+# 将当前终端内容写入剪贴板
+keybind = super+shift+j=write_screen_file:paste
