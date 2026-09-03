@@ -1,8 +1,0 @@
-[
-  {
-    "label": "Code Runner: Run Current File",
-    "command": "bash ~/.config/zed/runner.sh \"$ZED_DIRNAME\" \"$ZED_FILENAME\" \"$ZED_STEM\"",
-    "use_new_terminal": false,
-    "allow_concurrent_runs": false
-  }
-]

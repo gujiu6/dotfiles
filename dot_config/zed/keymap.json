@@ -1,8 +1,0 @@
-[
-  {
-    "context": "Editor",
-    "bindings": {
-      "f4": ["task::Spawn", { "task_name": "Code Runner: Run Current File" }]
-    }
-  }
-]
