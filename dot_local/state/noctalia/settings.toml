@@ -1,4 +1,4 @@
-config_version = 13
+config_version = 14
 
 [audio]
 enable_overdrive = true
@@ -98,9 +98,9 @@ thickness = 41
 
 [calendar]
 enabled = true
+event_time_format = "%H:%M:%S"
 
 [control_center.calendar]
-event_time_format = "%H:%M:%S"
 show_events_card = false
 
 [desktop_widgets]
