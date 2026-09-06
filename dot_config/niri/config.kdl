@@ -21,5 +21,3 @@ include "input__custom__.kdl"
 include "effects.kdl"
 // 10.显示器配置
 include "monitor.kdl"
-// 11.工作区配置
-include "workspace.kdl"
