@@ -105,7 +105,12 @@ show_events_card = false
 
 [desktop_widgets]
 schema_version = 2
-widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002", "desktop-widget-0000000000000003" ]
+widget_order = [
+    "desktop-widget-0000000000000001",
+    "desktop-widget-0000000000000002",
+    "desktop-widget-0000000000000003",
+    "desktop-widget-0000000000000004"
+]
 
     [desktop_widgets.grid]
     cell_size = 16
@@ -160,6 +165,24 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
         [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
         background = false
         color = "primary"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000004]
+    box_height = 624.0
+    box_width = 2560.0
+    cx = 1272.0
+    cy = 1128.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000004.settings]
+        background = false
+        bands = 128
+        centered = false
+        mirrored = false
+        show_when_idle = true
 
 [dock]
 enabled = true
@@ -270,7 +293,7 @@ manager_placement = "floating"
 enabled = [ "noctalia/timer", "noctalia/mpvpaper", "noctalia/wallhaven", "dotnetrob/cat" ]
 
 [shell]
-avatar_path = "/home/gujiu/Wallpapers/v1.jpg"
+avatar_path = "/home/gujiu/Wallpapers/Head/v1.jpg"
 external_ip_enabled = true
 font_family = "JetBrainsMonoNL NF"
 launch_apps_as_systemd_services = true
@@ -299,6 +322,7 @@ source = "wallpaper"
 
 [wallpaper]
 directory = "/home/gujiu/Wallpapers/Pic"
+transition_on_startup = true
 
     [wallpaper.default]
     path = "/home/gujiu/Wallpapers/Pic/v3.jpg"
