@@ -101,6 +101,12 @@ binds {
     // zen-browser
     Mod+W { spawn "zen-browser"; }
 
+    // VS Code
+    Mod+M { spawn "code-insiders"; }
+
+    // Zed
+    Mod+Z { spawn "zeditor"; }
+
     // ========================================================
     // 七. 系统面板
     // ========================================================
@@ -141,6 +147,5 @@ binds {
 
     // 当前窗口
     Alt+Print { screenshot-window; }
-
 
 }

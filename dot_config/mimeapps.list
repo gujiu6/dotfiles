@@ -155,3 +155,4 @@ x-scheme-handler/moekoe=appimagekit_eadc1241af9580b608cbb5432b19519f-MoeKoe_Musi
 x-scheme-handler/unknown=brave-browser.desktop
 zz-application/zz-winassoc-xls=wps-office-prometheus.desktop
 image/jpeg=org.gnome.Loupe.desktop
+x-scheme-handler/zcode=zcode.desktop
