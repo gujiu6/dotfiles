@@ -3,6 +3,7 @@ calendar_credentials_v1 = true
 
 [theme_templates]
 applied_builtin_ids = ""
+applied_community_ids = ""
 
 [wallpaper_panel]
-flatten = false
+flatten = true

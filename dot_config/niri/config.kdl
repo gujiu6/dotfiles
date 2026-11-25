@@ -1,7 +1,7 @@
 // --------------------------------------------------
 // 一. Niri 配置文件 (Niri configuration file)
 // --------------------------------------------------
-// 1.由 nwg-displays 生成的显示器配置
+// 1.显示器配置
 include "monitor.kdl"
 // 2.快捷键绑定配置
 include "binds.kdl"
@@ -19,5 +19,3 @@ include "rules.kdl"
 include "input__custom__.kdl"
 // 9.自定义效果配置
 include "effects.kdl"
-// 10.显示器配置
-include "monitor.kdl"

@@ -98,8 +98,8 @@ binds {
     // 终端
     Mod+Q { spawn "ghostty"; }
 
-    // zen-browser
-    Mod+W { spawn "zen-browser"; }
+    // chrome
+    Mod+W { spawn "google-chrome-stable"; }
 
     // VS Code
     Mod+M { spawn "code-insiders"; }

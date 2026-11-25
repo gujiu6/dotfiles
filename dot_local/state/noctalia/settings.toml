@@ -1,9 +1,10 @@
-config_version = 14
+config_version = 20
 
 [audio]
 enable_overdrive = true
 enable_sounds = true
 sound_volume = 0.19999999552965164
+spectrum_frame_rate = 240
 
 [bar.default]
 background_opacity = 0.4999999888241291
@@ -20,67 +21,67 @@ thickness = 41
     accordion = false
     accordion_direction = "end"
     enabled = true
-    fill = "surface_variant"
+    fill = "surface_container"
     id = "g1"
     members = [ "date", "clock", "bar", "weather" ]
-    opacity = 0.69999998807907104
+    opacity = 0.699999988079071
     padding = 6.0
 
     [[bar.default.capsule_group]]
     accordion = false
     accordion_direction = "end"
     enabled = true
-    fill = "surface_variant"
+    fill = "surface_container"
     id = "g2"
     members = [ "notifications", "network", "bluetooth", "volume", "brightness", "battery", "control-center" ]
-    opacity = 0.69999998807907104
+    opacity = 0.699999988079071
     padding = 6.0
 
     [[bar.default.capsule_group]]
     accordion = false
     accordion_direction = "end"
     enabled = true
-    fill = "surface_variant"
+    fill = "surface_container"
     id = "g3"
     members = [ "tray", "clipboard" ]
-    opacity = 0.69999998807907104
+    opacity = 0.699999988079071
     padding = 6.0
 
     [[bar.default.capsule_group]]
     accordion = false
     accordion_direction = "end"
     enabled = true
-    fill = "surface_variant"
+    fill = "surface_container"
     id = "g4"
     members = [ "session" ]
-    opacity = 0.69999998807907104
+    opacity = 0.699999988079071
     padding = 6.0
 
     [[bar.default.capsule_group]]
     accordion = false
     accordion_direction = "end"
     enabled = true
-    fill = "surface_variant"
+    fill = "surface_container"
     id = "g5"
     members = [ "media", "audio_visualizer" ]
-    opacity = 0.69999998807907104
+    opacity = 0.699999988079071
     padding = 0.0
 
     [[bar.default.capsule_group]]
     accordion = false
     accordion_direction = "end"
     enabled = true
-    fill = "surface_variant"
+    fill = "surface_container"
     id = "g6"
     members = [ "workspaces", "taskbar" ]
-    opacity = 0.69999998807907104
+    opacity = 0.699999988079071
     padding = 6.0
 
     [[bar.default.capsule_group]]
     accordion = false
     accordion_direction = "end"
     enabled = true
-    fill = "surface_variant"
+    fill = "surface_container"
     id = "g7"
     members = [ "launcher", "wallpaper", "mpvpaper", "wallhaven" ]
     opacity = 1.0
@@ -90,7 +91,7 @@ thickness = 41
     accordion = false
     accordion_direction = "end"
     enabled = true
-    fill = "surface_variant"
+    fill = "surface_container"
     id = "g8"
     members = [ "cat", "ram", "temp" ]
     opacity = 1.0
@@ -123,11 +124,11 @@ widget_order = [
     [desktop_widgets.widget.desktop-widget-0000000000000001]
     box_height = 320.0
     box_width = 336.0
-    cx = 136.44795227050781
-    cy = 70.039390563964844
+    cx = 157.3907470703125
+    cy = 80.8045883178711
     output = "eDP-1"
-    placement_height = 1067.0
-    placement_width = 1707.0
+    placement_height = 1231.0
+    placement_width = 1969.0
     rotation = 0.0
     type = "clock"
 
@@ -141,11 +142,11 @@ widget_order = [
     [desktop_widgets.widget.desktop-widget-0000000000000002]
     box_height = 0.0
     box_width = 0.0
-    cx = 853.5
-    cy = 533.5
+    cx = 984.4998779296875
+    cy = 615.5
     output = "eDP-1"
-    placement_height = 1067.0
-    placement_width = 1707.0
+    placement_height = 1231.0
+    placement_width = 1969.0
     rotation = 0.0
     type = "fancy_audio_visualizer"
 
@@ -157,11 +158,11 @@ widget_order = [
     [desktop_widgets.widget.desktop-widget-0000000000000003]
     box_height = 0.0
     box_width = 0.0
-    cx = 366.92898559570312
-    cy = 75.642539978027344
+    cx = 423.2472839355469
+    cy = 87.2689437866211
     output = "eDP-1"
-    placement_height = 1067.0
-    placement_width = 1707.0
+    placement_height = 1231.0
+    placement_width = 1969.0
     rotation = 0.0
     type = "weather"
 
@@ -272,7 +273,7 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1", "lock
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -283,6 +284,8 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1", "lock
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -299,7 +302,7 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1", "lock
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -310,6 +313,8 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1", "lock
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -317,16 +322,16 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1", "lock
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 196.0
     box_width = 810.0
-    cx = 854.0
-    cy = 885.00006103515625
+    cx = 985.07666015625
+    cy = 1021.0263671875
     output = "eDP-1"
-    placement_height = 1067.0
-    placement_width = 1707.0
+    placement_height = 1231.0
+    placement_width = 1969.0
     rotation = 0.0
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -337,6 +342,8 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1", "lock
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -354,7 +361,7 @@ mute = false
 nice = 19
 picker_open_near_click = true
 picker_placement = "floating"
-video_directory = "/home/gujiu/Wallpapers/Video"
+video_directory = "/home/gujiu/Wallpapers/Vedeo"
 
 [plugin_settings."noctalia/wallhaven"]
 browser_open_near_click = true
@@ -394,23 +401,24 @@ telemetry_enabled = true
 builtin = "Noctalia"
 community_palette = "Catppuccin Macchiato Pink"
 mode = "auto"
-source = "wallpaper"
+source = "builtin"
+wallpaper_scheme = "m3-content"
 
 [wallpaper]
 directory = "/home/gujiu/Wallpapers/Pic"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/gujiu/Wallpapers/Pic/v3.jpg"
+    path = "/home/gujiu/Wallpapers/Pic/v1.jpg"
 
     [wallpaper.last]
-    path = "/home/gujiu/Wallpapers/Pic/v3.jpg"
+    path = "/home/gujiu/Wallpapers/Pic/v1.jpg"
 
     [wallpaper.monitors.DP-1]
     path = "/home/gujiu/Wallpapers/Pic/v3.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/gujiu/Wallpapers/Pic/v3.jpg"
+    path = "/home/gujiu/Wallpapers/Pic/v1.jpg"
 
 [widget.audio_visualizer]
 bands = 128
